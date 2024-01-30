@@ -53,7 +53,7 @@ Some important things to consider in here -
 - flex property of Expanded lets us specify how much of area will an individual widget take. In this case, the Expanded child having flex 2 will have a height twice as much as the others
 
 
-## Day 1
+## Day 2
 Details of the widgets -
 - <u>ListView</u>
   - Same as Column but swipeable so that screen overflow is avoided
@@ -67,5 +67,26 @@ Refer to <a href="mainf/lib/day-2.dart"> this code </a>
         itemCount: 10,
         itemBuilder: (context, index) => ListTile(
         title: Text(index.toString()),
-     ))```
-  Refer to <a href="mainf/lib/day-2-builder.dart"> this code
+     ))
+     ```
+    - itemCount - Refers to the total widgets that can be placed
+    - itemBuilder - Method to build the widgets
+  <br> Refer to <a href="mainf/lib/day-2-builder.dart"> this code </a>
+
+## Day 3
+Details of the widgets used
+- <u>GridLayout.builder()</u>
+  - Similar to ListView.builder()
+  - ```dart
+    GridView.builder(
+      itemCount: 64,
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4),
+      itemBuilder: (context, index) => Container(
+            decoration: BoxDecoration(
+                color: Colors.deepPurple[200],
+                borderRadius: BorderRadius.circular(20)),
+            margin: const EdgeInsets.all(4),
+          ));
+     ```
+  - This code creates 64 containers with each row containing 4 containers.

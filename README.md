@@ -28,24 +28,24 @@ This adds deepPurple color and creates a rounded border of radius 20 along the s
 body: Column(
     children: [
         Expanded(
-                  flex: 2,
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.green,
-                        borderRadius: BorderRadius.circular(20)),
-                    child: const Center(
-                        child: Text(
-                      "Hello World",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )),
-                  ),
-                )
-              ],
-            );
+          flex: 2,
+          child: Container(
+            decoration: BoxDecoration(
+                color: Colors.green,
+                borderRadius: BorderRadius.circular(20)),
+            child: const Center(
+                child: Text(
+              "Hello World",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+              ),
+            )),
+          ),
+        )
+      ],
+    );
 ```
 
 Some important things to consider in here -
@@ -77,7 +77,7 @@ Refer to <a href="mainf/lib/day-2.dart"> this code </a>
 Details of the widgets used
 - <u>GridLayout.builder()</u>
   - Similar to ListView.builder()
-  - ```dart
+  - ```c++
     GridView.builder(
       itemCount: 64,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

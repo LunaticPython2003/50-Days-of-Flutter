@@ -15,8 +15,10 @@ class MyApp extends StatelessWidget {
                 title: const Text("Flutter App"),
                 leading: const Icon(Icons.menu)),
             backgroundColor: Colors.deepPurple[200],
-            body: ListView(children: [
+            body: ListView(scrollDirection: Axis.horizontal, children: [
               Container(
+                width: 500,
+                // height: 500,
                 decoration: BoxDecoration(
                     color: Colors.deepPurple,
                     borderRadius: BorderRadius.circular(20)),
@@ -31,6 +33,8 @@ class MyApp extends StatelessWidget {
                 )),
               ),
               Container(
+                // width: 500,
+                // height: 500,
                 decoration: BoxDecoration(
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(20)),

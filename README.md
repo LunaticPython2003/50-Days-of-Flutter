@@ -5,7 +5,6 @@ The repository contains all the important concepts and codes that I used while l
 ## Day 1
 
 Details of the widgets that have been covered on this day -
-### AppBar
 - <u> AppBar </u> -
   - title - Used for adding text (or images) to the navigation bar
   - leading - The area preceeded by the title
@@ -56,5 +55,17 @@ Some important things to consider in here -
 
 ## Day 1
 Details of the widgets -
-### ListView
+- <u>ListView</u>
   - Same as Column but swipeable so that screen overflow is avoided
+  - ```scrollDirection: Axis.horizontal``` of ListView creates a scrollable widget in the horizontal direction. <br> <br>
+Refer to <a href="mainf/lib/day-2.dart"> this code </a>
+
+- <u>ListView.builder</u>
+  - Building multiple widgets - <br>
+    ```c++
+    body: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index) => ListTile(
+        title: Text(index.toString()),
+     ))```
+  Refer to <a href="mainf/lib/day-2-builder.dart"> this code

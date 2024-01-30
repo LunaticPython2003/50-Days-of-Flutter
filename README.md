@@ -52,3 +52,9 @@ body: Column(
 Some important things to consider in here -
 - Multiple widgets can be encapsulated within the Column widget, like the Expanded widget(s) in here
 - flex property of Expanded lets us specify how much of area will an individual widget take. In this case, the Expanded child having flex 2 will have a height twice as much as the others
+
+
+## Day 1
+Details of the widgets -
+### ListView
+  - Same as Column but swipeable so that screen overflow is avoided

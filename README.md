@@ -90,3 +90,30 @@ Details of the widgets used
           ));
      ```
   - This code creates 64 containers with each row containing 4 containers.
+
+## Day 3
+Details of the widgets used
+- <u>Stack</u>
+  - Works just like it says; stacks one element over the other in the screen.
+  - ```c++
+    body: Stack(alignment: Alignment.center, children: [
+      Container(
+        height: 400,
+        width: 400,
+        decoration: const BoxDecoration(
+          color: Colors.deepPurple,
+        ),
+      ),
+      Container(
+        height: 300,
+        width: 300,
+        decoration: BoxDecoration(color: Colors.deepPurple[200]),
+      ),
+      Container(
+        height: 200,
+        width: 200,
+        decoration: BoxDecoration(color: Colors.deepPurple[400]),
+      )
+    ]),
+    ```
+  - This renders 3 components, one on top of another with the subsequent boxes stacked on one another in the center. Refer to <a href="mainf/lib/day-4-stack.dart"> this code </a>

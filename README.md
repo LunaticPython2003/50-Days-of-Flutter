@@ -120,7 +120,7 @@ Details of the widgets used
 
 - <u>GestureDetector</u>
   - Used to perform a action when the user interacts with a widget. Interaction could be of any type, such as clicking on the widget, long pressing, etc.
-  - The widget takes a child (which in this case, is a Container), and the interaction method (onTap in this case). Refer to <a href="mainf/lib/day-5-gesture.dart"> this code </a>
+  - The widget takes a child (which in this case, is a Container), and the interaction method (onTap in this case). Refer to <a href="mainf/lib/day-4-gesture.dart"> this code </a>
 
 ## Day 4
 Flutter Navigation

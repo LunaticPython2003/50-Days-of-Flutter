@@ -123,4 +123,15 @@ Details of the widgets used
   - The widget takes a child (which in this case, is a Container), and the interaction method (onTap in this case). Refer to <a href="mainf/lib/day-5-gesture.dart"> this code </a>
 
 ## Day 4
-[ ] TODO: Write a comprehensive guide on routing
+Flutter Navigation
+- The endpoints for the pages to route to, have to be defined in the routes section of MaterialApp().
+- After the routes are mapped to the corresponding functions, they can be navigated to using `Navigator.pushNamed`
+- ```c++
+    body: Center(
+      child: ElevatedButton(
+      child: const Text(
+        "Go to Page 1",
+        textAlign: TextAlign.center,
+      ),
+      onPressed: () => Navigator.pushNamed(context, '/firstpage'),
+    )),

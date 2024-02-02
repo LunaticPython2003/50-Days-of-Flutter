@@ -126,7 +126,8 @@ Details of the widgets used
 Flutter Navigation
 - The endpoints for the pages to route to, have to be defined in the routes section of MaterialApp().
 - After the routes are mapped to the corresponding functions, they can be navigated to using `Navigator.pushNamed`
-- ```c++
+- Consider the example -
+ ```c++
     body: Center(
       child: ElevatedButton(
       child: const Text(
@@ -135,3 +136,5 @@ Flutter Navigation
       ),
       onPressed: () => Navigator.pushNamed(context, '/firstpage'),
     )),
+  ```
+  Here, when the button is pressed, the app moves to the /firstpage endpoint, which has been mapped in the routes section of the MaterialApp. Refer to <a href="mainf/lib/day-5-navigation.dart"> this code </a>
